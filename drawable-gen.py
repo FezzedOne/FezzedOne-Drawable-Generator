@@ -375,7 +375,8 @@ def drawableArmour(framesheetToConvert, directiveFileName, headItem=False, sleev
                 directiveOutputFile.close()
 
 
-def convertToDrawables(imageToConvert, jsonFileName, scale="1", shipX="0", shipY="0", returnShipDrawables=False, returnSigns=False, returnAnimated=False, returnRawSigns=False):
+def convertToDrawables(imageToConvert, jsonFileName, scale="1", shipX="0", shipY="0", returnShipDrawables=False,
+    returnSigns=False, returnAnimated=False, returnRawSigns=False, large=False):
     try:
         imagePixels = imageToConvert.load()
         scaleFloat = float(scale)
