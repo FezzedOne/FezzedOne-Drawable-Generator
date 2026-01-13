@@ -196,7 +196,7 @@ def drawableArmour(framesheetToConvert, directiveFileName, headItem=False, sleev
                                     except IndexError:
                                         pass
                                     else:
-                                        if imagePixel[3] and (imagePixel[3] != 0):
+                                        if imagePixel[3] and (imagePixel[3] != 0) and (sheetPixel[3] == 0):
                                             if imagePixel[3] == 255:
                                                 imagePixel = imagePixel[:3]
                                             hexString = ""
